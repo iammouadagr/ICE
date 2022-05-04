@@ -1,0 +1,16 @@
+# Configuration file (05/04/22 00:23:15.506)
+
+# Server configuration
+Ice.Admin.ServerId=SoupServer
+Ice.Admin.Endpoints=tcp -h localhost
+Ice.ProgramName=SoupServer
+# Object adapter Hello
+Hello.Endpoints=tcp -h localhost
+Hello.AdapterId=SoupServer.Hello
+# Server descriptor properties
+Identity=hallo
+IceMX.Metrics.Debug.GroupBy=id
+IceMX.Metrics.Debug.Disabled=1
+IceMX.Metrics.ByParent.GroupBy=parent
+IceMX.Metrics.ByParent.Disabled=1
+Ice.Default.Locator=DemoIceGrid/Locator:default -h localhost -p 4061
